@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Dulces Delicias Cheli's</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="#"><img src="assets/logo.png" alt="logo"><span>Dulces Delicias Cheli's</span></a>
+    <nav id="main-nav" class="nav">
+      <a href="#" data-screen="inicio">Inicio</a>
+      <a href="#" data-screen="galeria">Galería</a>
+      <a href="#" data-screen="personaliza">Personaliza</a>
+      <a href="#" data-screen="carrito">Carrito</a>
+      <a href="#" data-screen="contacto">Contacto</a>
+    </nav>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+<!-- Inicio -->
+<section id="inicio" class="screen">
+  <div class="hero">
+    <video class="hero-video" autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+      <source src="assets/hero-video.mp4" type="video/mp4">
+      Tu navegador no soporta video.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h1 class="hero-title">Tradición y dulzura en cada bocado</h1>
+      <p class="hero-sub">Pasteles artesanales, personalizados y con amor.</p>
+      <div class="hero-ctas">
+        <a class="btn primary" data-screen="personaliza">Personalizar</a>
+        <a class="btn ghost" data-screen="galeria">Ver galería</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Galería -->
+<section id="galeria" class="screen hidden container">
+  <h2 class="section-title">Galería</h2>
+  <p class="section-desc">Explora nuestros pasteles por ocasión.</p>
+
+  <div class="gallery-grid">
+    <div class="gallery-card">
+      <img src="assets/cumpleaños1.jpeg" alt="Pastel de Cumpleaños">
+      <h3>Pastel de Cumpleaños</h3>
+      <button class="btn ghost" data-screen="pastel-de-cumpleaños">Ver detalles</button>
+    </div>
+    <div class="gallery-card">
+      <img src="assets/boda1.jpeg" alt="De Boda">
+      <h3>Boda</h3>
+      <button class="btn ghost" data-screen="pastel-Boda">Ver detalles</button>
+    </div>
+    <div class="gallery-card">
+      <img src="assets/bautizo1.jpeg" alt="De Bautizo">
+      <h3>Bautizo</h3>
+      <button class="btn ghost" data-screen="pastel-bautizo">Ver detalles</button>
+    </div>
+    <div class="gallery-card">
+      <img src="assets/xv1.jpeg" alt="De XV">
+      <h3>XV</h3>
+      <button class="btn ghost" data-screen="pastel-xv">Ver detalles</button>
+    </div>
+  </div>
+
+  <div class="gallery-action">
+    <a href="#" data-screen="personaliza" class="btn primary">Crear tu pastel</a>
+  </div>
+</section>
+<!-- Pastel de Cumpleaños -->
+<section id="pastel-de-cumpleaños" class="screen hidden container">
+  <h2 class="section-title">Pasteles de Cumpleaños</h2>
+  <p class="section-desc">Sabor tradicional con un toque artesanal.</p>
+  <div class="gallery-grid">
+    <div class="gallery-card">
+      <img src="assets/cumpleaños1.jpeg" alt="Vainilla clásico">
+      <h3>Pastel “Dorado Pampas”</h3>
+      <p>Este pastel de cumpleaños mide 28 cm de alto y tiene un diámetro de 20 cm. Rinde entre 20 y 25 porciones. Está decorado con esferas doradas, pampas, mariposas y el número dorado en la parte superior, celebrando la madurez con estilo bohemio.</p>
+      <p><strong>$650</strong></p>
+      <button class="btn primary add-to-cart" data-name="Pastel Dorado Pampas" data-price="650" data-img="assets/cumpleaños1.jpeg">Añadir</button>
+    </div>
+    <div class="gallery-card">
+      <img src="assets/cumpleaños2.jpeg" alt="Chocolate clásico">
+      <h3>Pastel “Corazón Vaquero”</h3>
+      <p>Con una altura de 30 cm y un diámetro de 20 cm, este pastel rinde entre 20 y 25 porciones. Está decorado con un sombrero, letrero de madera, siluetas de vaquero y caballo, y detalles western que lo convierten en un homenaje entrañable al estilo del campo.</p>
+      <p><strong>$550</strong></p>
+      <button class="btn primary add-to-cart" data-name="Pastel Corazón Vaquero" data-price="550" data-img="assets/cumpleaños2.jpeg">Añadir</button>
+    </div>
+    <div class="gallery-card">
+      <img src="assets/cumpleaños3.jpeg" alt="Zanahoria clásico">
+      <h3>Pastel “Princesa Real”</h3>
+      <p>Este pastel rosa mide 25 cm de alto y tiene un diámetro de 18 cm. Rinde entre 15 y 20 porciones. Está decorado con piping en tonos pastel, mariposas doradas y una corona brillante en la parte superior, ideal para celebraciones infantiles o quinceañeras con glamour.</p>
+      <p><strong>$500</strong></p>
+      <button class="btn primary add-to-cart" data-name="Pastel Princesa Real"data-price="500" data-img="assets/cumpleaños3.jpeg">Añadir</button>
+    </div>
+    <div class="gallery-card">
+      <img src="assets/cumpleaños4.jpeg" alt="Zanahoria clásico">
+      <h3>Pastel “Plata & Pincel”</h3>
+      <p>Con una altura de 20 cm y un diámetro de 18 cm, este pastel rinde entre 15 y 20 porciones. Está decorado con pinceladas grises, un topper acrílico y velas plateadas en forma de número, ideal para quienes celebran con estilo moderno y artístico.</p>
+      <p><strong>$520</strong></p>
+     <button class="btn primary add-to-cart" data-name="Pastel Plata & Pincel"data-price="520" data-img="assets/cumpleaños4.jpeg">Añadir</button>
+    </div>
+  </div>
+</section>
+
+<!-- Pastel de Boda -->
+<section id="pastel-Boda" class="screen hidden container">
+  <h2 class="section-title">Pasteles de Boda</h2>
+  <p class="section-desc">Elegancia y dulzura en cada pétalo.</p>
+  <div class="gallery-grid">
+    <div class="gallery-card">
+      <img src="assets/boda1.jpeg" alt="Pastel floral blanco">
+      <h3>Pastel “Brisa de Amor”</h3>
+      <p>Este pastel de boda tiene seis niveles y alcanza los 70 cm de altura, con diámetros que van de 15 a 30 cm. Rinde más de 100 porciones. Está decorado con flores de azúcar en cascada, ideal para una ceremonia frente al mar.</p>
+      <p><strong>$4800</strong></p>
+      <button class="btn primary add-to-cart" data-name="Pastel Brisa de Amor" data-price="4800" data-img="assets/boda1.jpeg">Añadir</button>
+    </div>
+    <div class="gallery-card">
+      <img src="assets/boda2.jpeg" alt="Pastel rosa con peonías">
+      <h3>Pastel “Luz de Gala”</h3>
+      <p>Con una altura de 35 cm y niveles de 20 × 20 cm y 15 × 15 cm, este pastel rinde entre 25 y 30 porciones. Está decorado con flores blancas, ramas doradas con esferas y luces LED integradas que le dan un toque mágico y sofisticado.</p>
+      <p><strong>$1250</strong></p>
+      <button class="btn primary add-to-cart" data-name="Pastel Luz de Gala" data-price="1250" data-img="assets/boda2.jpeg">Añadir</button>
+    </div>
+    <div class="gallery-card">
+      <img src="assets/boda3.jpeg" alt="Pastel de zanahoria con flores">
+      <h3>Pastel “Jardín de Encaje”</h3>
+      <p>Este pastel de tres niveles mide 40 cm de alto, con diámetros que van de 15 a 25 cm. Rinde entre 40 y 50 porciones. Su diseño incluye flores esculpidas, ramas blancas y texturas plisadas que evocan la delicadeza de un vestido de gala en primavera.</p>
+      <p><strong>$2200</strong></p>
+      <button class="btn primary add-to-cart" data-name="Pastel Jardín de Encaje" data-price="2200" data-img="assets/boda3.jpeg">Añadir</button>
+    </div>
+    <div class="gallery-card">
+      <img src="assets/boda4.jpeg" alt="Pastel de zanahoria con flores">
+      <h3>Pastel “Noche de Rosas”</h3>
+      <p>Con una altura de 45 cm y tres niveles de 15 a 25 cm de diámetro, este pastel rinde entre 50 y 60 porciones. Está decorado con rosas blancas y azul marino en cascada, y un topper de novios en pose romántica.</p>
+      <p><strong>$2400</strong></p>
+      <button class="btn primary add-to-cart" data-name="Pastel Noche de Rosas" data-price="2400" data-img="assets/boda4.jpeg">Añadir</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Pastel de bautizo -->
+<section id="pastel-bautizo" class="screen hidden container">
+  <h2 class="section-title">Pasteles de Bautizo</h2>
+  <p class="section-desc">Elegancia y dulzura para tu día especial.</p>
+  <div class="gallery-grid">
+    <div class="gallery-card">
+      <img src="assets/bautizo1.jpeg" alt="Pastel blanco clásico">
+      <h3>Pastel “Seyon”</h3>
+      <p>Este pastel de dos niveles mide aproximadamente 35 cm de alto, con una base de 20 × 20 cm y un nivel superior de 15 × 15 cm. Rinde entre 25 y 30 porciones. Está decorado con hoja de oro, una cruz dorada, flores blancas, esferas doradas y láminas translúcidas que le dan un toque moderno y ceremonial.</p>
+      <p><strong>$1200</strong></p>
+      <button class="btn primary add-to-cart" data-name="Pastel Seyon" data-price="1200" data-img="assets/bautizo1.jpeg">Añadir</button>
+    </div>
+    <div class="gallery-card">
+      <img src="assets/bautizo2.jpeg" alt="Pastel de dos pisos">
+      <h3>Pastel “Trigal Bendito”</h3>
+      <p>Es una pieza de dos niveles diseñada para bautizo, con una altura aproximada de 30 cm. Su base mide 18 × 18 cm y el nivel superior 14 × 14 cm, rindiendo entre 20 y 25 porciones. Está decorado con esferas doradas, hojas secas, espigas de trigo y una cruz delineada al frente, todo en tonos cálidos y naturales.</p>
+      <p><strong>$950</strong></p>
+      <button class="btn primary add-to-cart" data-name="Pastel Trigal Bendito" data-price="950" data-img="assets/bautizo2.jpeg">Añadir</button>
+    </div>
+    <div class="gallery-card">
+      <img src="assets/bautizo3.jpeg" alt="Pastel romántico">
+      <h3>Pastel “Devoción Dorada”</h3>
+      <p>Este pastel ceremonial tiene una altura de 32 cm, con niveles de 20 × 20 cm y 15 × 15 cm. Rinde entre 25 y 30 porciones. Está decorado con una cruz dorada en relieve, flores blancas y un rosario elaborado en fondant que rodea el pastel con solemnidad.</p>
+      <p><strong>$1150</strong></p>
+      <button class="btn primary add-to-cart" data-name="Pastel Devoción Dorada" data-price="1150" data-img="assets/bautizo3.jpeg">Añadir</button>
+    </div>
+    <div class="gallery-card">
+      <img src="assets/bautizo4.jpeg" alt="Pastel romántico">
+      <h3>Pastel “Cielo Sagrado”</h3>
+      <p>Con una altura de 30 cm y niveles de 18 × 18 cm y 14 × 14 cm, este pastel rinde entre 20 y 25 porciones. Está decorado con texturas florales en azul claro, detalles en hoja de oro y una cruz dorada en la parte superior, evocando paz y elevación espiritual.</p>
+      <p><strong>$980</strong></p>
+      <button class="btn primary add-to-cart" data-name="Pastel Cielo Sagrado" data-price="980" data-img="assets/bautizo4.jpeg">Añadir</button>
+    </div>
+  </div>
+</section>
+
+<!-- Pastel de XV -->
+<section id="pastel-xv" class="screen hidden container">
+  <h2 class="section-title">Pasteles de XV</h2>
+  <p class="section-desc">Diseña tu pastel ideal para cualquier ocasión.</p>
+  <div class="gallery-grid">
+    <div class="gallery-card">
+      <img src="assets/xv1.jpeg" alt="Pastel temático">
+      <h3>Pastel “Árbol de Votos”</h3>
+      <p>Esta estructura de cinco niveles alcanza los 80 cm de altura. Cada pastel mide 20 cm de diámetro y en conjunto rinden entre 80 y 100 porciones. Está decorado con flores naturales, perlas colgantes y una estructura tipo árbol que simboliza crecimiento, unión y belleza natural.</p>
+      <p><strong>$5200</strong></p>
+      <button class="btn primary add-to-cart" data-name="Pastel Árbol de Votos" data-price="5200" data-img="assets/xv1.jpeg">Añadir</button>
+    </div>
+    <div class="gallery-card">
+      <img src="assets/xv2.jpeg" alt="Pastel con nombre">
+      <h3>Pastel “Sueño Lavanda”</h3>
+      <p>Este pastel para XV años mide 60 cm de alto e incluye un pastel central de dos niveles acompañado por cuatro individuales. Rinde entre 60 y 70 porciones. Está decorado con flores lavanda, mariposas y un topper personalizado que puede adaptarse al nombre de la festejada o a la frase “Mis XV años”, evocando una tarde romántica y delicada.</p>
+      <p><strong>$3800</strong></p>
+      <button class="btn primary add-to-cart" data-name="Pastel Sueño Lavanda" data-price="3800" data-img="assets/xv2.jpeg">Añadir</button>
+    </div>
+    <div class="gallery-card">
+      <img src="assets/xv3.jpeg" alt="Pastel de colores">
+      <h3>Pastel “Rosa Imperial”</h3>
+      <p>Con una altura de 60 cm y cuatro niveles de 15 a 30 cm de diámetro, este pastel rinde entre 80 y 100 porciones. Está decorado con relieves barrocos, flores rosas y un degradado de color que lo convierte en una pieza majestuosa y ornamental.</p>
+      <p><strong>$4500</strong></p>
+      <button class="btn primary add-to-cart" data-name="Pastel Imperial" data-price="4500" data-img="assets/xv3.jpeg">Añadir</button>
+    </div>
+    <div class="gallery-card">
+      <img src="assets/xv4.jpeg" alt="Pastel de colores">
+      <h3>Pastel “Velocidad & Rosas”</h3>
+      <p>Este pastel de tres niveles mide 45 cm de alto y tiene diámetros de 15 a 25 cm. Rinde entre 50 y 60 porciones. Está decorado con rosas rojas en cascada, hoja de oro y texto personalizado, ideal para una celebración juvenil con elegancia y energía.</p>
+      <p><strong>$2600</strong></p>
+      <button class="btn primary add-to-cart" data-name="Pastel Velocidad & Rosas" data-price="2600" data-img="assets/xv4.jpeg">Añadir</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Personaliza -->
+<section id="personaliza" class="screen hidden container pastel-section">
+  <div class="pastel-inner">
+    <div class="form-panel">
+      <h2>Personaliza tu pastel</h2>
+      <form id="custom-form" novalidate>
+        <label for="ref-img">Imagen de referencia</label>
+        <input type="file" id="ref-img" accept="image/*">
+
+        <label for="tam">Tamaño</label>
+        <select id="tam" name="tam" required>
+          <option value="">Selecciona...</option>
+          <option value="Pequeño (4 porciones)">Pequeño (4 porciones)</option>
+          <option value="Mediano (6 porciones)">Mediano (6 porciones)</option>
+          <option value="Grande (8 porciones)">Grande (8 porciones)</option>
+        </select>
+
+        <label for="harina">Tipo de harina</label>
+        <select id="harina" name="harina" required>
+          <option value="">Selecciona...</option>
+          <option value="Vainilla">Vainilla</option>
+          <option value="Chocolate">Chocolate</option>
+          <option value="Zanahoria">Zanahoria</option>
+        </select>
+
+        <label for="relleno">Tipo de relleno</label>
+        <select id="relleno" name="relleno" required>
+          <option value="">Selecciona...</option>
+          <option value="Mango con betún">Mango con betún</option>
+          <option value="Mermelada de fresa">Mermelada de fresa</option>
+          <option value="Fresa con betún">Fresa con betún</option>
+        </select>
+
+        <label for="especificaciones">Especificaciones</label>
+        <textarea id="especificaciones" name="especificaciones" placeholder="Ej. Sin frutos secos" rows="3"></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Agregar al carrito</button>
+          <button type="reset" class="btn ghost">Limpiar</button>
+        </div>
+        <div id="form-msg" class="form-msg" aria-live="polite"></div>
+      </form>
+    </div>
+
+    <aside class="preview-panel">
+      <h3>Vista previa</h3>
+      <div class="preview-card">
+        <img id="preview-img" src="assets/pastel-preview-1.jpg" alt="preview">
+
+        <div id="ref-preview" class="img-preview">No hay imagen seleccionada</div>
+
+        <div class="preview-meta">
+          <p><strong>Tamaño:</strong> <span id="pv-tam">—</span></p>
+          <p><strong>Harina:</strong> <span id="pv-harina">—</span></p>
+          <p><strong>Relleno:</strong> <span id="pv-relleno">—</span></p>
+          <p><strong>Precio:</strong> <span id="pv-precio">$0</span></p>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+
+  <!-- Carrito -->
+  <!-- Carrito -->
+<section id="carrito" class="screen hidden container">
+  <h2 class="section-title">Carrito</h2>
+  <div class="cart">
+    <table class="cart-table" id="cart-table">
+      <thead>
+        <tr><th>Producto</th><th>Cantidad</th><th>Precio</th><th>Acción</th></tr>
+      </thead>
+      <tbody id="cart-body">
+        <tr class="cart-empty"><td colspan="4">Tu carrito está vacío</td></tr>
+      </tbody>
+    </table>
+    <div class="cart-side">
+      <div class="cart-total"><span>Total:</span><strong id="total-amount">$0</strong></div>
+      <button id="checkout-btn" class="btn primary">Pagar</button>
+    </div>
+  </div>
+
+  <!-- Panel de pago -->
+  <div id="payment-panel" class="hidden payment-panel">
+    <h3>Método de pago</h3>
+    <form id="payment-form" novalidate>
+      <label for="card-name">Nombre en la tarjeta</label>
+      <input type="text" id="card-name" placeholder="Ej. Christian Castro" required>
+
+      <label for="card-number">Número de tarjeta</label>
+      <input type="text" id="card-number" placeholder="•••• •••• •••• ••••" maxlength="19" required>
+
+      <label for="card-exp">Fecha de expiración</label>
+      <input type="text" id="card-exp" placeholder="MM/AA" maxlength="5" required>
+
+      <label for="card-cvc">CVC</label>
+      <input type="text" id="card-cvc" placeholder="•••" maxlength="4" required>
+
+      <div class="form-actions">
+        <button type="submit" class="btn primary">Confirmar pago</button>
+      </div>
+      <div id="payment-msg" class="form-msg" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="screen hidden container contact-section">
+    <div class="contact-form">
+      <h2>Contacto</h2>
+      <form id="contact-form" novalidate>
+        <label for="name">Nombre</label>
+        <input id="name" type="text" required minlength="2">
+
+        <label for="email">Correo</label>
+        <input id="email" type="email" required>
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" rows="4" required></textarea>
+
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Enviar</button>
+          <button class="btn ghost" type="reset">Borrar</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="contact-side">
+      <h3>Horario</h3>
+      <p>Lunes a Domingo 8:00 AM - 7:00 PM</p>
+      <h3>Síguenos</h3>
+      <div class="socials">
+        <a href="#">IG</a>
+        <a href="#">FB</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- MODAL FUERA DEL MAIN -->
+<div id="fullscreen-modal" class="fullscreen hidden">
+  <span class="close">&times;</span>
+  <img id="fullscreen-img" alt="Vista ampliada">
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Dulces Delicias Cheli's</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
+
